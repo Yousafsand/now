@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Center with Margin & Height</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      position: relative;
+    }
+
+    h1 {
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px; /* half of height */
+      margin-left: -100px; /* half of width */
+      color: blue;
+      text-align: center;
+      line-height: 100px; /* vertically center text inside h1 */
+      background-color: #eee;
+      border-radius: 10px;
+    }
+    h1:hover{
+        color: red;
+        background-color: #ccc;
+    }
+    h1:active {
+        color: green;
+        background-color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1 onclick="helllo()">Hello World</h1>
+</body>
+<script>
+    function helllo() {
+        alert("Hello World");
+    }
+</script>
+</html>
+
